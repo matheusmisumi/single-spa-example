@@ -7,7 +7,7 @@ function pathPrefix(prefix) {
 }
 
 registerApplication(
-  'home', () => {},
+  'home',
     () => import('./src/home.app.js'),
     (location) => location.pathname === "" ||
     location.pathname === "/" ||
